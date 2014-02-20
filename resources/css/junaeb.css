@@ -1,0 +1,336 @@
+header {	
+	background-color: #777;
+	color: #fff;
+}
+
+header .brand img {
+	border: none;
+	width: 3.5em;
+	height: auto;
+	margin: 0.5em 1em;
+}
+
+header a {
+	color: #fff !important;
+}
+
+.preheader h1 {
+	margin-left: -2.4em;
+	font-size: 2em!important;
+	line-height: 0.9em!important;
+}
+
+.preheader {
+	line-height: 4em;
+}
+
+nav,.navbar {
+	border: 0 !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.navbar-inner {
+	background-color: transparent; /*#777;*/
+	background-image: none;
+	border: 0 !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+.navbar-text {
+	color: #fff;
+	padding-top: 0.4em;
+	line-height: 1.5em;
+}
+
+.navbar .nav li a {
+	letter-spacing: 0.75pt !important;
+	line-height: 0.8em;
+	text-transform: uppercase;
+}
+
+.navbar .nav>.active>a,.navbar .nav>.active>a:hover,.navbar .nav>.active>a:focus
+	{
+	background-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	border-bottom: 1px solid #fff;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle,.navbar .nav li.dropdown.active>.dropdown-toggle,.navbar .nav li.dropdown.open.active>.dropdown-toggle
+	{
+	background-color: transparent !important;
+	color: #fff !important;
+	border-bottom: 1px dotted #fff;
+}
+
+.dropdown-menu li a {
+	color: #000 !important;
+	line-height: 1.2em !important;
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li.active a {
+	color: #fff !important;
+}
+
+.white-caret {
+	border-top-color: #fff !important;
+	border-bottom-color: #fff !important;
+}
+
+.yellow {
+	color: #f89406 !important;
+}
+
+section {
+	padding: 1em;
+}
+
+footer {
+	background-color: #777;
+	color: #fff;
+	text-align: right;
+}
+
+footer p {
+	padding: 0.7em 1em 0;
+}
+
+h2.underlined-title, h4.underlined-title {
+	border-bottom: 1px solid #ddd;
+	padding-left:0.3em;
+}
+
+/*.page_navigation {
+	float: right;
+}*/
+/*.page_navigation a {
+	margin: 0.1em 0.15em;
+	padding: 0.3em 0.65em;
+	border: 1px solid #ccc;
+	background-color: #fcfcfc;
+	color: #5393c5;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.page_navigation a.active_page {
+	color: #2373a5;
+	background-color: #f0f0f0;
+	text-decoration: underline;	
+}*/
+form {
+	margin: auto 1.5em;
+}
+
+thead {
+	background-color: #0268b3;
+	color: white;
+}
+
+th {
+	font-size: 0.9em;
+}
+
+tbody td {
+	font-size: 0.8em;
+	padding: 0.1em 0.3em 0.1em 0.5em !important;
+}
+
+tfoot td {
+	padding: 0 !important;
+}
+
+tfoot td a.first {
+	margin-left: 0.8em;
+}
+
+tfoot input,tfoot select {
+	margin-top: 0.7em;
+}
+
+tfoot .operations {
+	padding-top: 0.9em;
+	padding-right: 0.7em;
+}
+
+form>table th {
+	cursor: default;
+}
+
+form.search legend {
+	margin-bottom: 0.5em;
+}
+
+/*form.search fieldset>.row-fluid label {*/
+form fieldset>.row-fluid label {
+	font-size: 0.7em;
+	font-weight: bold;
+	line-height: 0.8em;
+}
+
+/*form.search input {*/
+form fieldset>.row-fluid input {
+	margin-bottom: 0.5em;
+}
+
+form.search fieldset>.row-fluid  button[type='submit'] {
+	margin-top: 1.8em;
+}
+
+form.search fieldset>label {
+	display: none;
+}
+
+form>table td {
+	cursor: pointer;
+}
+
+form>table th.text-center,form>table td.text-center {
+	text-align: center !important;
+	line-height: 1em;
+}
+
+.llama {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	margin: 0 auto;
+	vertical-align: center;
+	line-height: 100%;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+	width: 80%!important;
+	margin-left: -40%;
+}
+
+.modal table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.dropdown-menu li.active {
+	color: yellow!important;
+}
+
+#frmInfo {
+	position: relative;	
+	width: 200px;
+	border: 1px solid #b3b3b3;
+	padding: 0.6em 1.7em 0 0.7em;
+	margin: -3.5em 0 0 1.5em;
+	background-color: #ffffd5;
+	border-radius: 5px;
+	opacity: 0.7;
+}
+#frmInfo label {
+	font-weight: bold;	
+	font-size: 0.7em!important;
+	margin: 0!important;
+}
+
+label {
+	cursor: default;
+}
+
+#frmInfo input, #frmInfo span.uneditable-input {		
+	font-size: 0.7em!important;	
+	margin: -0.6em 0 0 0!important;
+	line-height: 0.9em!important;
+	height: 1em!important;
+	padding: 0.5em 0.3em 0.3em!important;
+	width: 100%;
+}
+#frmInfo div.row-fluid {
+	margin: 0!important;
+	padding: 0!important;
+}
+
+#toca input, #psc input {
+	/*background-color: rgba(255,255,217,0.5);
+	color: #555;*/	
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+#toca input[disabled='disabled'], #psc input[disabled='disabled'] {
+	background-color: #bbb;
+	color: #333;	
+}
+
+#toca .input-mini, #psc .input-mini{
+	width: 3em;
+	margin: 0;
+}
+.input-micro {
+	width: 3em;
+}
+#toca .input-micro, #psc .input-micro{	
+	margin: 0;
+	padding: 0.3em 0.2em;
+	font-size: 1.1em;
+}
+#toca ul.inline li, #psc ul.inline li {	
+	padding: 0;
+}
+#toca label, #psc label{
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.greenbg {
+	background-color: rgba(237,255,237,0.8)!important;
+	color: #555!important;
+}
+
+#toast {
+	position: absolute;
+	right: 0;
+	margin: 0.5em;
+}
+
+.alert-inverse {
+	color: #fff;
+	background-color: rgba(0,0,0,0.6);
+	border-color: #fcfcfc;
+	text-shadow: none;
+}
+
+.badge{
+	font-size: 0.9em;
+	line-height: 1em;
+	padding: 4px 6px 3px!important;
+	margin: 5px 0!important;
+}
+
+.resaltado input:disabled, .resaltado span.uneditable-input{
+    background: #ffff66;    
+    font-weight: bold;
+    text-align: center;	
+}
+
+#progressbar {
+	position: absolute;
+	right: 4.1em;
+	margin: 3.5em 0 0 0;			
+}
+
+header h1 small{
+	position: relative;	    
+    top: -0.6em !important;
+    font-size: 0.4em !important;
+    margin: 0!important;
+    padding: 0!important;
+}
+header h1 {
+	margin-bottom: 0!important;
+}

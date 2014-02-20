@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../../../resources/css/bootstrap.min.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/bootstrap.min.css}" />
+<link href="../../../resources/css/junaeb.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/junaeb.css}" />
+<link href="../../../resources/css/footer.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/footer.css}" />
+<link href="../../../resources/css/header.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/header.css}" />
+<script src="../../../resources/js/jquery-latest.min.js"
+	th:src="@{/resources/js/jquery-latest.min.js}"></script>
+<script src="../../../resources/js/bootstrap.min.js"
+	th:src="@{/resources/js/bootstrap.min.js}"></script>
+<script src="../../../resources/js/junaeb.js"
+	th:src='@{/resources/js/junaeb.js}'></script>
+</head>
+<body>
+	<div id="wrap">
+		<header th:replace="fragments/header :: header">&nbsp;</header>
+		<div id="toast" class="alert alert-inverse span2 hide">
+			<a class="close" href="#">&times;</a>
+			<p class="message">
+				<!-- Aqui debe ir el mensaje -->
+			</p>
+		</div>
+		<section class="container-fluid">
+			<div class="offset5 span6">
+				<form class="form-narrow form-horizontal"
+					action="/j_spring_security_check" method="post"
+					th:action="@{/j_spring_security_check}">
+					<th:block th:if="${param.error != null}">
+						<div
+							th:replace="fragments/alert :: alert (type='danger', message='Sign in error. Please try again.')"></div>
+					</th:block>
+					<fieldset>
+						<legend>Ingresos al sistema</legend>
+						<div class="control-group">
+							<label for="inputUserName" th:text="#{login.username}"
+								class="col-lg-2 control-label">UserName</label>
+							<div class="controls">
+								<input type="text" class="form-control" id="inputUserName"
+									th:placeholder="#{login.username}" placeholder="usuario"
+									name="j_username" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label for="inputPassword" th:text="#{login.password}"
+								class="col-lg-2 control-label">Contraseña</label>
+							<div class="controls">
+								<input type="password" class="form-control" id="inputPassword"
+									th:placeholder="#{login.password}" placeholder="contraseña"
+									name="j_password" />
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls text-right">
+								<label for="remember-me">Recordar en este equipo <input
+									type="checkbox" id="remember-me"
+									name="_spring_security_remember_me" /></label>
+							</div>
+						</div>
+						<div class="form-actions text-right">
+							<button type="reset" class="btn">Limpiar</button>
+							<button type="submit" class="btn btn-primary">Ingresar</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+		<footer th:replace="fragments/footer :: footer">&nbsp;</footer>
+	</div>
+	<script>
+		$('#username').focus();
+	</script>
+</body>
+</html>
