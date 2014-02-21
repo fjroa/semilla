@@ -72,9 +72,19 @@
     </div> 
 	<script>
 		$(":input:first").focus();
-        var realHeight = $( window ).height() - ($("header").height()*2 + $(".footer").height()*2);
-        $('.container-fluid').css('height', realHeight);
-        $('.container-fluid').css('width', $( window ).width());
+        function resize() {
+                var realHeight = $( window ).height() - ($("header").height()*2 + $(".footer").height()*2);
+                $('.container-fluid').css('height', realHeight);
+                $('.container-fluid').css('width', $( window ).width());
+        }
+
+        resize();
+        $(function (){
+            $(window).resize(function(){
+                resize();
+            });
+        });
+        
 	</script>
 </body>
 </html>
