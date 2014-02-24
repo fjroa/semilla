@@ -333,15 +333,16 @@ label {
 
 .content {
     display:table;
-    width:100%;
+    width:97%;
     height:100%;
+    margin-bottom: 60px;
 }
 .table-cell2{
     display: table-cell;
     vertical-align: middle;
 }
 
-legend {
+legend.loginform {
     padding: 15px 0px 15px;
     text-indent: 15px;
 	background-color: #f5f5f5;

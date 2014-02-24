@@ -7,7 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<link href="../../../resources/css/junaeb.css" rel="stylesheet" media="screen" />
+<link href="../../../resources/css/semilla.css" rel="stylesheet" media="screen" />
+<link href="../../../resources/css/font-awesome.css" rel="stylesheet" media="screen" />
+
 <script src="../../../resources/js/jquery-latest.min.js"></script>
 <script src="../../../resources/js/bootstrap.min.js"></script>
 </head>
@@ -15,7 +17,7 @@
     <header class="navbar navbar-inverse header-outer" role="banner">
         <div class="row-fluid">
             <div class="span3">
-                <img src="../../../resources/img/Logo_Dedalus_Web_1_0.png" alt="Home" id="logo" class="img-responsive pull-left"/>
+                <img src="../../../resources/img/logo.png" alt="Home" id="logo" class="img-responsive pull-left"/>
             </div>
             <div class="span6 v-center">
                 <div class="banner_content">
@@ -36,11 +38,7 @@
                 <div class="span6 table-cell2" style="float: none; margin: 0 auto;">
 				<form class="form-horizontal loginform" action="#" method="get">
 					<fieldset >
-						<legend>Ingreso al sistema</legend>
-                         <div class="alert alert-dismissable alert-danger">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <span>Error al realizar el ingreso en la plataforma.</span>
-                    </div>
+						<legend class="loginform">Ingreso al sistema</legend>
 						<div class="control-group">
 							<label forre="userName" class="control-label">Usuario</label>
 							<div class="controls">
@@ -78,8 +76,8 @@
 		$(":input:first").focus();
         function resize() {
                 var realHeight = $( window ).height() - ($("header").height()*2 + $(".footer").height()*2);
-                $('.container-fluid').css('height', realHeight);
-                $('.container-fluid').css('width', $( window ).width());
+                $('.container-fluid').css('height', realHeight-30);
+                $('.container-fluid').css('width', $( window ).width()-30);
         }
 
         resize();
