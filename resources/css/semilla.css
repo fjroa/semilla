@@ -336,10 +336,13 @@ label {
     width:97%;
     height:100%;
     margin-bottom: 60px;
+}
+
+.content_login {
     background-image:url('../img/slide-image-3.jpg');
     background-size: 97% 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;   
 }
 .table-cell2{
     display: table-cell;
