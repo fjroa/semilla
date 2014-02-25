@@ -349,8 +349,7 @@ legend.loginform {
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 
 .nav-justified {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-left: 20px !important;
 }
 .nav-justified > li > a {
   padding-top: 15px;
@@ -370,9 +369,7 @@ legend.loginform {
 }
 
 @media (min-width: 768px) {
-  .nav-justified {
-    max-height: 52px;
-  }
+
   .nav-justified > li > a {
     border-right: 1px solid #d5d5d5;
     border-left: 1px solid #fff;
