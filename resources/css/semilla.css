@@ -24,11 +24,16 @@ header a {
 	line-height: 4em;
 }
 
-nav,.navbar {
+.nav,.navbar {
 	border: 0 !important;
 	-webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	box-shadow: none !important;
+}
+
+.nav {
+    background-color: #A0B1B9;
+    height: 31px;
 }
 
 .navbar-inner {
@@ -39,25 +44,20 @@ nav,.navbar {
 	-webkit-box-shadow: none !important;
 }
 
-.navbar-text {
-	color: #fff;
-	padding-top: 0.4em;
-	line-height: 1.5em;
-}
-
-.navbar .nav li a {
+.navbar .nav li a{
 	letter-spacing: 0.75pt !important;
 	line-height: 0.8em;
 	text-transform: uppercase;
 }
 
-.navbar .nav>.active>a,.navbar .nav>.active>a:hover,.navbar .nav>.active>a:focus
+.navbar .nav>.active>a,.navbar .nav>.active>a:hover,.navbar .nav>.active>a:focus, .nav-pills>.active>a
 	{
-	background-color: transparent !important;
+	background-color: #B49F87 !important;
 	-webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	box-shadow: none !important;
 	border-bottom: 1px solid #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .navbar .nav li.dropdown.open>.dropdown-toggle,.navbar .nav li.dropdown.active>.dropdown-toggle,.navbar .nav li.dropdown.open.active>.dropdown-toggle
@@ -109,7 +109,7 @@ h2.underlined-title, h4.underlined-title {
 }
 
 thead {
-	background-color: #0268b3;
+	background-color: #98AEB9;
 	color: white;
 }
 
@@ -237,37 +237,6 @@ label {
 	padding: 0!important;
 }
 
-#toca input, #psc input {
-	/*background-color: rgba(255,255,217,0.5);
-	color: #555;*/	
-	background-color: red;
-	color: white;
-	text-align: center;
-}
-#toca input[disabled='disabled'], #psc input[disabled='disabled'] {
-	background-color: #bbb;
-	color: #333;	
-}
-
-#toca .input-mini, #psc .input-mini{
-	width: 3em;
-	margin: 0;
-}
-.input-micro {
-	width: 3em;
-}
-#toca .input-micro, #psc .input-micro{	
-	margin: 0;
-	padding: 0.3em 0.2em;
-	font-size: 1.1em;
-}
-#toca ul.inline li, #psc ul.inline li {	
-	padding: 0;
-}
-#toca label, #psc label{
-	font-weight: bold;
-	font-size: 0.8em;
-}
 
 .greenbg {
 	background-color: rgba(237,255,237,0.8)!important;
@@ -370,5 +339,54 @@ legend.loginform {
 .form-actions {
     margin-bottom: 0px !important;
     border-bottom: 1pxsolid #e5e5e5;
+}
+
+.nav-pills {
+    list-style: none;
+    
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #777;
+  text-align: center;
+
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  background-color: #ddd;
+  background-image: none;
+  box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #fff;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .nav,
+  header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
