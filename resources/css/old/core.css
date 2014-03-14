@@ -64,10 +64,6 @@ header {
     margin-left: 20px;
     max-height: 60px;
 }
-
-.header-logged-details {
-    margin-right: 10px;
-}
 /* End Header styles
 -------------------------------------------------- */
 /* Login styles
@@ -86,4 +82,3 @@ header {
 }
 /* End Login styles
 -------------------------------------------------- */
-
