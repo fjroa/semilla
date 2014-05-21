@@ -87,6 +87,18 @@ angular.module('todo', ['ionic'])
     task.title = "";
   };
 
+  $scope.deleteTask = function(task) {
+    if(!$scope.activeProject || !task) {
+      return;
+    }
+    $scope.activeProject.tasks.pop({
+      title: task.title
+    });
+
+    // Inefficient, but save all the projects
+    Projects.save($scope.projects);
+  };
+    
   $scope.newTask = function() {
     $scope.taskModal.show();
   };
@@ -114,5 +126,5 @@ angular.module('todo', ['ionic'])
       }
     }
   });
-
+        
 });
