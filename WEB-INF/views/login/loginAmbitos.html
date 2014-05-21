@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ingreso al sistema</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+
+    <meta name="author" content="Francisco Javier Roa López" />
+
+    <link rel="icon" type="image/png" href="../../../resources/img/Gota_Dedalus_Web_0.png" />
+    <link rel="shortcut icon" type="image/png" href="../../../resources/img/Gota_Dedalus_Web_0.png" />
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="../../../resources/css/semilla.css" rel="stylesheet" media="screen" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-7 col-xs-offset-1 col-sm-offset-0 col-sm-3 col-md-3 col-lg-3">
+                    <img src="../../../resources/img/dedalus.reversed.png" class="img-responsive" alt="Home" id="logo" />
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-xs-11  col-xs-offset-1 col-sm-5 col-sm-offset-1 col-lg-offset-1 col-lg-4">
+                    <div class="text-center">
+                        <h1>Prototipo de Login</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div id="loginpanel" class="panel panel-default col-md-4 col-md-offset-4">
+                <div class="panel-body">
+                    <form class="form-horizontal" action="#" method="get" role="form">
+                        <legend class="loginform">Ingreso al sistema</legend>
+                        <div class="form-group">
+                            <label forre="userName" class="control-label">Usuario</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Usuario" name="j_username" autofocus="autofocus" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-2 col-sm-10 control-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña" name="j_password" />
+                        </div>
+                        <div class="form-group">
+								<label for="ambitos" class="control-label">Ámbito</label> <select name="ambitos" class="form-control">
+									<option value="S">SIGPAE</option>
+									<option value="T">TNE</option>
+									<option value="H">HPV</option>
+									<option value="P">PRESUPUESTOS</option>
+									<option value="B">BECAS</option>
+								</select>
+							</div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="remember-me" name="_spring_security_remember_me" />Recordar en este equipo
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="text-right">
+                            <button type="reset" class="btn">Limpiar</button>
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">&copy; Dedalus GS Chile 2014.</p>
+        </div>
+    </div>
+    <script src="../../../resources/js/jquery-latest.min.js"></script>
+    <script src="../../../resources/js/bootstrap.min.js"></script>
+    <script>
+        $(":input:first").focus();
+    </script>
+</body>
+
+</html>

@@ -44,21 +44,10 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="span6" style="float: none; margin: 0 auto;">
-                <h1>Prototipos de Semilla</h1>
-                <p class="lead">Enlaces a páginas de prototipo:</p>
-                <ul>
-                    <li><a href="WEB-INF/views/login/login.html">Página de Login</a></li>
-                    <li><a href="WEB-INF/views/login/loginError.html">Página de Login con Error</a></li>
-                    <li><a href="WEB-INF/views/login/loginError.html">Página de Logout</a></li>
-                    <br />
-                    <li><a href="WEB-INF/views/bean/listado.html">Página de Listado</a></li>
-					<br />
-					<li><a href="ionic/www/index.html">Página de IonicTodo</a></li>
-                </ul>
-                </div>
+        <div class="container">
+            <div class="starter-template">
+                <h1>Hello, world!</h1>
+                <p class="lead">Now you can start your own project with Bootstrap 3.1. This plugin is a fork from <a href="https://github.com/le717/brackets-html-skeleton">HTML Skeleton</a>.</p>
             </div>
         </div>
     </body>

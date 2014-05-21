@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+        body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Carousel
+    ================================================== -->
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="resources/img/1375816_10202281399451143_711927261_n.jpg" data-slide-no="0" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="resources/img/1175039_10202405075142958_3752602105556263981_n.jpg" data-slide-no="1" alt="Second slide">
+
+                </div>
+                <div class="item">
+                    <img src="resources/img/bodaSanta.png" data-slide-no="2" alt="Third slide">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <!-- /.carousel -->
+    </div>
+    <script src="resources/js/jquery-latest.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#myCarousel').carousel({interval: 2000});
+        $('#myCarousel').on('slid', function() {
+            var to_slide = $('.carousel-item.active').attr('data-slide-no');
+            $('.myCarousel-target.active').removeClass('active');
+            $('.carousel-indicators [data-slide-to=' + to_slide + ']').addClass('active');
+        });
+        $('.myCarousel-target').on('click', function() {
+            $('#myCarousel').carousel(parseInt($(this).attr('data-slide-to')));
+            $('.myCarousel-target.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+</body>
+
+</html>
